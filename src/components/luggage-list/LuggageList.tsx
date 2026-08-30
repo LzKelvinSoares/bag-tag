@@ -1,4 +1,5 @@
 import type { LuggageItem } from '../../types/luggage'
+import { sortByNumber } from '../../utils/helpers'
 import { LuggageCard } from '../luggage-card/LuggageCard'
 import styles from './LuggageList.module.css'
 
@@ -18,13 +19,9 @@ export function LuggageList({ items, onEdit, onDelete }: Props) {
     )
   }
 
-  const sorted = [...items].sort((a, b) =>
-    a.numeracao.localeCompare(b.numeracao, undefined, { numeric: true })
-  )
-
   return (
     <ul className={styles.list}>
-      {sorted.map((item) => (
+      {sortByNumber(items).map((item) => (
         <li key={item.id}>
           <LuggageCard item={item} onEdit={onEdit} onDelete={onDelete} />
         </li>
