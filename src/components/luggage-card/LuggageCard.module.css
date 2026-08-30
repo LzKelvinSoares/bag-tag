@@ -1,0 +1,101 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardTag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tipoBadge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+
+.mala {
+  background: color-mix(in srgb, var(--mala) 20%, transparent);
+  color: var(--mala);
+}
+
+.caixa {
+  background: color-mix(in srgb, var(--caixa) 20%, transparent);
+  color: var(--caixa);
+}
+
+.numeracao {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.cardActions {
+  display: flex;
+  gap: 4px;
+}
+
+.btnIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-2);
+  border: none;
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btnIcon:hover {
+  background: var(--border);
+  color: var(--text);
+}
+
+.danger:hover {
+  background: color-mix(in srgb, var(--danger) 20%, transparent);
+  color: var(--danger);
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cardMeta {
+  display: flex;
+  gap: 16px;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.conteudo {
+  font-size: 13px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+  margin-top: 2px;
+}
