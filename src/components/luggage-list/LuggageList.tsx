@@ -18,9 +18,13 @@ export function LuggageList({ items, onEdit, onDelete }: Props) {
     )
   }
 
+  const sorted = [...items].sort((a, b) =>
+    a.numeracao.localeCompare(b.numeracao, undefined, { numeric: true })
+  )
+
   return (
     <ul className={styles.list}>
-      {items.map((item) => (
+      {sorted.map((item) => (
         <li key={item.id}>
           <LuggageCard item={item} onEdit={onEdit} onDelete={onDelete} />
         </li>
