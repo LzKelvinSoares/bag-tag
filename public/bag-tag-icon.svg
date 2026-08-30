@@ -1,0 +1,46 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14B8A6"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+    <linearGradient id="tagGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB020"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- Suitcase body -->
+  <g>
+    <!-- Handle -->
+    <rect x="216" y="128" width="80" height="44" rx="14" fill="none" stroke="#FFFFFF" stroke-width="16"/>
+    <!-- Case -->
+    <rect x="140" y="168" width="232" height="196" rx="28" fill="#FFFFFF"/>
+    <!-- Horizontal strap detail -->
+    <rect x="140" y="238" width="232" height="20" fill="#0D9488" opacity="0.18"/>
+    <!-- Wheels -->
+    <circle cx="184" cy="378" r="14" fill="#0D9488"/>
+    <circle cx="328" cy="378" r="14" fill="#0D9488"/>
+  </g>
+
+  <!-- Luggage tag hanging off the case, top-right -->
+  <g>
+    <!-- string -->
+    <path d="M 320 168 Q 350 130 372 116" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+    <!-- tag shape (rounded rect with a point) -->
+    <path d="M 372 92
+             h 66
+             a 18 18 0 0 1 18 18
+             v 56
+             a 18 18 0 0 1 -18 18
+             h -66
+             l -22 -46
+             z"
+          fill="url(#tagGrad)" stroke="#FFFFFF" stroke-width="6"/>
+    <!-- punch hole -->
+    <circle cx="388" cy="120" r="7" fill="#FFFFFF"/>
+  </g>
+</svg>
